@@ -1,0 +1,921 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #737373;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+}
+
+header {
+    background-color: white;
+    border-bottom: #737373 solid 1px;
+    box-shadow: 1px 1px 1px #626262;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 140px;
+    z-index: 100;
+}
+
+main {
+    position: relative;
+    margin-top: 120px;
+    width: 100%;
+}
+
+/*Empieza el diseño de los TITULOS*/
+
+h1 {
+    color: #626262;
+    font-family: 'Quicksand';
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-left: 20px;
+    align-self: center;
+}
+
+h2 {
+    color: #626262;
+    font-family: 'Quicksand';
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight:900;
+    padding: 5px;
+    margin-top: 60px;
+}
+
+#makeItHappen {
+    color: #626262;
+    font-family: 'Quicksand';
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h3 {
+    color: #626262;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    width: 60vw;
+    line-height: 1.5;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    color: #626262;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    text-align: center;
+    font-style: oblique;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+h5 {
+    color: #626262;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    text-align: center;
+    font-style: oblique;
+    line-height: 1.6;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+h6 {
+    font-family: 'Montserrat';
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+p {
+    color: #626262;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Empieza el diseño de la BARRA SUPERIOR*/
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logoinicio {
+    margin: 15px 20px;
+}
+
+
+.menu {
+    list-style-type: none;
+    text-align: right;
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+    position: relative;
+}
+
+.menu li :hover {
+    transition: all 0.1s;
+    background-color:#737373;
+    color: white;
+    font-weight: bold;
+}
+
+.menu li a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Quicksand';
+    font-size: 1rem;
+    padding: 6px;
+    color: #737373;
+    box-shadow: 1px 2px 3px #737373;
+    border-radius: 5px;
+}
+
+.menu li ul {
+    position: absolute;
+    display: none;
+    border-radius: 5px;
+    border: #737373;
+}
+
+.menu ul li:hover ul {
+    color: white;
+    background-color:#737373;
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu li a {
+    background: none;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Quicksand';
+    font-size: 1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    border: none;
+    font-weight: normal;
+}
+
+.submenu li .sub-brand:hover {
+    transition: all 0.1s;
+    background-color: #4FA9ED;
+    color: white;
+    font-weight: bold;
+}
+
+.submenu li .sub-estra:hover {
+    transition: all 0.1s;
+    background-color:#B93AD5;
+    color: white;
+    font-weight: bold;
+}
+
+.submenu li .sub-social:hover {
+    transition: all 0.1s;
+    background-color:#DF3B64;
+    color: white;
+    font-weight: bold;
+}
+
+.submenu li .sub-google:hover {
+    transition: all 0.1s;
+    background-color:#E3702F;
+    color: white;
+    font-weight: bold;
+}
+
+.submenu li .sub-whats:hover {
+    transition: all 0.1s;
+    background-color: #7AD45A;
+    color: white;
+    font-weight: bold;
+}
+
+.submenu li .sub-email:hover {
+    transition: all 0.1s;
+    background-color:#8D7DD8;
+    color: white;
+    font-weight: bold;
+}
+
+.submenu li .sub-seo:hover {
+    transition: all 0.1s;
+    background-color:#EEB400;
+    color: white;
+    font-weight: bold;
+}
+
+.submenu li .sub-web:hover {
+    transition: all 0.1s;
+    background-color:lightgrey;
+    color: white;
+    font-weight: bold;
+}
+
+.socialinicio {
+    list-style-type: none;
+    text-align: right;
+    top: 20px;
+    right: 60px;
+    position: absolute;
+}
+
+.socialinicio li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.icon-facebook {
+    color: #737373;
+    font-size: 35px;
+}
+
+.icon-instagram {
+    color: #737373;
+    font-size: 35px;
+}
+
+.icon-linkedin {
+    color: #737373;
+    font-size: 35px;
+}
+
+/*Empieza el diseño de la IMAGEN DE FONDO*/
+
+.imagenfondo {
+    position: fixed;
+    top: 42px;
+    left: 350px;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/*Empieza el diseño del SLOGAN y MISION*/
+
+.slogan {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: space-around;
+    margin-top: 100px;
+    z-index: 0;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Empieza el diseño de QUE HACEMOS*/
+
+.quehacemos {
+    position: relative;
+    margin-top: 165px;
+    background-color: rgba(115, 115, 115, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    height: 82vh;
+    padding-top: 20px;
+}
+
+.tituloquehacemos {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.titulosoluciones {
+    padding-top: 0px;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    color: #737373;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.subtitulosoluciones {
+    padding-top: 0px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: #737373;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+    list-style-type: none;
+    width: 200px;
+    font-weight: bold;
+}
+
+.soluciones {
+    margin: 10px;
+    border: #626262;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.grupo1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grupo2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenedor {
+    background-color: white;
+    border: rgba(98, 98, 98, 0.5) 1px solid;
+    box-shadow: 1px 1px 0px 1px rgba(98, 98, 98, 0.4);
+    border-radius: 5px;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+
+#icon-branding {
+    text-align: center;
+    color: #4FA9ED;
+    font-size: 30px;
+    background-color: rgba(115, 115, 115, 0.2);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.branding {
+    position: relative;
+}
+
+#icon-estrategia {
+    text-align: center;
+    color: #B93AD5;
+    font-size: 30px;
+    background-color: rgba(115, 115, 115, 0.2);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.estrategia {
+    position: relative;
+
+}
+
+#icon-socialads {
+    text-align: center;
+    color: #DF3B64;
+    font-size: 30px;
+    background-color: rgba(115, 115, 115, 0.2);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.socialads {
+    position: relative;
+}
+
+#icon-googleads {
+    text-align: center;
+    color: #E3702F;
+    font-size: 30px;
+    background-color: rgba(115, 115, 115, 0.2);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.googleads {
+    position: relative;
+    margin-right: 50px;
+}
+
+#icon-whatsapp {
+    text-align: center;
+    color: #7AD45A;
+    font-size: 30px;
+    background-color: rgba(115, 115, 115, 0.2);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.whatsappbusiness {
+    position: relative;
+}
+
+#icon-email {
+    text-align: center;
+    color: #8D7DD8;
+    font-size: 30px;
+    background-color: rgba(115, 115, 115, 0.2);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.emailmarketing {
+    position: relative;
+}
+
+#icon-seo {
+    text-align: center;
+    color: #EEB400;
+    font-size: 30px;
+    background-color: rgba(115, 115, 115, 0.2);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.seo {
+    position: relative;
+}
+
+#icon-desarrollo {
+    text-align: center;
+    color: #737373;
+    font-size: 30px;
+    background-color: rgba(115, 115, 115, 0.2);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.desarrolloweb {
+    position: relative;
+    margin-right: 50px;
+}
+
+/*Empieza el diseño del MUNDO ONLINE*/
+
+.mundoonline {
+    position: relative;
+    margin-top: 60px;
+}
+
+.contenedorreporte {
+    position: relative;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+.reporte {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+.referencia {
+    font-family: 'Montserrat';
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #737373;
+    position: relative;
+    padding-top: 15px;
+}
+
+.referencia a:link {
+    text-decoration: none;
+    color: #737373;
+}
+
+.referencia a:visited {
+    text-decoration: none;
+    color: #737373;
+}
+
+/*Empieza el diseño de QUIENES SOMOS*/
+
+.quienessomos {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.perfil {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 50px;
+}
+
+.anhang {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.parpal {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+/*Empieza el diseño de CONTACTANOS*/
+
+.contactanos {
+    position: relative;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.formulario {
+    width: 100%;
+    height: 100%;
+    font-family: "Quicksand";
+    color: white;
+}
+
+fieldset {
+    padding: 20px;
+    border: white;
+    border-radius: 10px;
+    background-color: rgba(223, 59, 100, 0.2);
+    box-shadow: 3px 3px 10px rgba(115, 115, 115, 0.5);
+    color:#DF3B64;
+    margin-top: 20px;
+    width: 800px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-weight: bold;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 100px;
+    align-items: stretch;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.prop {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.comentario {
+    position: relative;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.enviar {
+    display: flex;
+    flex-direction: column;
+    align-self:flex-end;
+}
+
+/*Empieza el diseño del FOOTER*/
+
+footer {
+    background-color: #737373;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+}
+
+.menufooter {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.menufooter li {
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+}
+
+.menufooter li :hover {
+    transition: all 0.1s;
+    color:#737373;
+    font-weight: bold;
+}
+
+.menufooter li a{
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Quicksand';
+    font-size: 1rem;
+    padding: 6px;
+    color:#737373;
+    border-radius: 5px;
+    border: white 1px solid;
+    border-style: groove;
+    background-color: white;
+}
+
+.socialfooter {
+    list-style-type: none;
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+
+.socialfooter li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.icon-facebook-footer {
+    color: white;
+    font-size: 35px;
+}
+
+.icon-instagram-footer {
+    color: white;
+    font-size: 35px;
+}
+
+.icon-linkedin-footer {
+    color: white;
+    font-size: 35px;
+}
+
+/*BOTON WHATSAPP FIJO*/
+
+.botonwhatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+}
+
+#whatsappfooter {
+    color: #7AD45A;
+    font-size: 60px;
+    text-align: center;
+}
+
+#whatsappfooter:hover {
+    font-size: 70px;
+    text-align: center;
+}
+
+/*BLOG*/
+
+.noticias {
+    width: 70%;
+    height: 100vh;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "art1 art2"
+    "art3 art4";
+    justify-items: center;
+    row-gap: 50px;
+}
+
+.art1 {
+    grid-area: art1;
+    border: none;
+    box-shadow: #737373 3px 3px 10px;
+    background-color: white;
+}
+
+.art2 {
+    grid-area: art2;
+    border: none;
+    box-shadow: #737373 3px 3px 10px;
+    background-color: white;
+
+}
+
+.art3 {
+    grid-area: art3;
+    border: none;
+    box-shadow: #737373 3px 3px 10px;
+    background-color: white;
+
+}
+
+.art4 {
+    grid-area: art4;
+    border: none;
+    box-shadow: #737373 3px 3px 10px;
+    background-color: white;
+
+}
+
+/*¿Qué hacemos? Soluciones*/
+
+.sol {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 30px;
+}
+
+.sol-brand {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    box-shadow: #737373 3px 3px 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.sol-estra {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 30px;
+    box-shadow: #737373 3px 3px 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.sol-social {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    box-shadow: #737373 3px 3px 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.sol-google {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 30px;
+    box-shadow: #737373 3px 3px 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.sol-whats {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    box-shadow: #737373 3px 3px 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.sol-email {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 30px;
+    box-shadow: #737373 3px 3px 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.sol-seo {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    box-shadow: #737373 3px 3px 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.sol-web {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 30px;
+    box-shadow: #737373 3px 3px 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.titulo-sol {
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.subtitulo-sol {
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 1rem;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.definicion-sol {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.8rem;
+    text-align: start;
+    line-height: 1.5;
+}
+
+.titulo-rol {
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 1rem;
+    text-align: start;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.lista-rol {
+    list-style-type:circle;
+    text-align: start;
+    position: relative;
+    font-family: "Montserrat";
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.texto-sol {
+    margin-right: 40px;
+    margin-left: 40px;
+}
