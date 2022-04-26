@@ -15,45 +15,22 @@
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     header {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "logo logo"
-        "socialinicio menu";
-        background-color: white;
-        box-shadow: 1px 1px 1px #737373;
-        width: 100%;
-        height: 100px;
-        z-index: 100;
-        position: fixed;
-        font-family: "Quicksand";
-        padding-top: 10px;
+        margin-top: 10px;
     }
     
     main {
         position: relative;
-        margin-top: 80px;
+        margin-top: 0px;
         display: flex;
         flex-direction: column;
         width: 100%;
     }
     
     /*ESTILO LOGO Y H1*/
-    
-    .logo {
-        grid-area: logo;
-        display: flex;
-        flex-direction: row;
-        justify-items: center;
-        align-items: center;
-        margin-left: 10px;
-        width: 100%;
-    }
 
-    #logoinicio {
+    .logo {
         width: 100px;
     }
     
@@ -227,7 +204,7 @@
     
     h1 {
         font-family: "Quicksand";
-        font-size: 0.5rem;
+        font-size: 1.2rem;
         text-align: center;
         color: #737373;
         letter-spacing: 0.2rem;
@@ -250,7 +227,7 @@
         text-align: center;
         color: #737373;
         margin-bottom: 20px;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     
     h3 {
@@ -289,6 +266,15 @@
         font-weight: bold;
         padding-top: 5px;
     }
+
+    .h5footer {
+        font-family: "Montserrat";
+        font-size: 0.8rem;
+        text-align: left;
+        color: #737373;
+        line-height: 1.5;
+        width: 80%;
+    }
     
     h6 {
         font-family: "Montserrat";
@@ -323,8 +309,12 @@
     .quehacemos {
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 0px;
         width: 100%;
+    }
+
+    .tituloquehacemos {
+        margin: 5px;
     }
     
     .soluciones {
@@ -358,8 +348,8 @@
         border: rgba(98, 98, 98, 0.5) 1px;
         box-shadow: 2px 1px 2px 1px rgba(98, 98, 98, 0.4);
         border-radius: 5px;
-        width: 200px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -389,6 +379,7 @@
         color: #737373;
         font-size: 0.7rem;
         font-weight: bold;
+        padding: 5px;
     }
     
     #icon-branding {
@@ -595,7 +586,7 @@
     }
 
     .formulario {
-        margin-top: 20px;
+        margin-top: 10px;
     }
     
     .columna1 {
@@ -708,81 +699,6 @@
         transform: scale(1.1, 1.1);
     }
     
-    /*SECCIÓN FOOTER*/
-    
-    footer {
-        background-color: #737373;
-        text-align: center;
-        position: relative;
-        margin-top: 80px;
-        width: 100%;
-        height: 150px;
-        padding-bottom: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .menufooter {
-        list-style-type: none;
-        position: relative;
-        text-align: center;
-        display: inline-block;
-        padding: 0px;
-        margin-top: 30px;
-    }
-    .menufooter li {
-        display: inline-block;
-        text-align: center;
-        margin: 0px;
-    }
-    
-    .menufooter li :hover {
-        transition: all 0.1s;
-        font-weight: bold;
-        transform: scale(1.1, 1.1);
-    }
-    
-    .menufooter li a{
-        text-decoration: none;
-        display: inline-block;
-        font-family: 'Quicksand';
-        font-size: 0.6rem;
-        padding: 2px;
-        color:#737373;
-        border-radius: 5px;
-        border: white 1px solid;
-        border-style: groove;
-        background-color: white;
-    }
-    
-    .socialfooter {
-        list-style-type: none;
-        text-align: left;
-        position: relative;
-        margin-left: 120px;
-        margin-top: 20px;
-    }
-    
-    .socialfooter li {
-        display: inline-block;
-        margin-left: 5px;
-    }
-    
-    .icon-facebook-footer {
-        color: white;
-        font-size: 25px;
-    }
-    
-    .icon-instagram-footer {
-        color: white;
-        font-size: 25px;
-    }
-    
-    .icon-linkedin-footer {
-        color: white;
-        font-size: 25px;
-    }
-    
     /*BOTON WHATSAPP FIJO*/
     
     .botonwhatsapp {
@@ -819,7 +735,8 @@
         "art4";
         justify-items: center;
         row-gap: 50px;
-        margin-top: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .imgart {
@@ -976,6 +893,7 @@
         text-align: start;
         margin-bottom: 20px;
         margin-top: 30px;
+        margin-left: 0px;
     }
     
     .lista-rol {
@@ -992,6 +910,16 @@
         margin-right: 40px;
         margin-left: 40px;
     }
+
+    .bi {
+        font-size: 2rem;
+        color: #737373;
+        padding: 10px;
+    }
+
+    .bi:hover {
+        transform: scale(1,1 1,1);
+    }
     
 }
 
@@ -1004,46 +932,23 @@
         color: #737373;
         background-color: white;
     }
-    
+
     header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 3fr;
-        grid-template-areas: 
-        "logo socialinicio"
-        "logo menu";
-        row-gap: 20px;
-        background-color: white;
-        box-shadow: 1px 1px 1px #737373;
-        width: 100%;
-        height: 150px;
-        z-index: 100;
-        position: fixed;
-        font-family: "Quicksand";
+        margin-top: 40px;
     }
     
     main {
         position: relative;
-        margin-top: 200px;
+        margin-top: 0px;
         display: flex;
         flex-direction: column;
-        row-gap: 100px;
+        row-gap: 40px;
     }
     
     /*ESTILO LOGO Y H1*/
     
     .logo {
-        grid-area: logo;
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        justify-items: center;
-        align-items: center;
-        margin-left: 20px;
-    }
-
-    #logoinicio {
-        width: 200px;
+        width: 150px;
     }
     
     /*ESTILO MENU INICIO*/
@@ -1206,7 +1111,7 @@
         position: fixed;
         opacity: 0.2;
         z-index: -1;
-        top: 60px;
+        top: 40px;
         align-self: center;
         width: 600px;
     }
@@ -1215,7 +1120,7 @@
     
     h1 {
         font-family: "Quicksand";
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         text-align: center;
         color: #737373;
         letter-spacing: 0.2rem;
@@ -1269,6 +1174,15 @@
         font-weight: bold;
         padding-top: 5px;
     }
+
+    .h5footer {
+        font-family: "Montserrat";
+        font-size: 0.8rem;
+        text-align: left;
+        color: #737373;
+        line-height: 1.5;
+        width: 80%;
+    }
     
     h6 {
         font-family: "Montserrat";
@@ -1305,7 +1219,11 @@
     .quehacemos {
         display: flex;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 80px;
+    }
+
+    .tituloquehacemos {
+        margin: 10px;
     }
     
     .soluciones {
@@ -1665,79 +1583,7 @@
     }
     
     .scale:hover {
-        transform: scale(1.2, 1.2);
-    }
-    
-    /*SECCIÓN FOOTER*/
-    
-    footer {
-        background-color: #737373;
-        text-align: center;
-        position: relative;
-        margin-top: 100px;
-        width: 100%;
-        height: 150px;
-    }
-    
-    .menufooter {
-        list-style-type: none;
-        text-align: center;
-        display: inline-block;
-        padding: 10px;
-        margin-top: 20px;
-    }
-    .menufooter li {
-        display: inline-block;
-        text-align: center;
-        margin: 5px;
-    }
-    
-    .menufooter li :hover {
-        transition: all 0.1s;
-        font-weight: bold;
         transform: scale(1.1, 1.1);
-    }
-    
-    .menufooter li a{
-        text-decoration: none;
-        display: inline-block;
-        font-family: 'Quicksand';
-        font-size: 1rem;
-        padding: 6px;
-        color:#737373;
-        border-radius: 5px;
-        border: white 1px solid;
-        border-style: groove;
-        background-color: white;
-    }
-    
-    .socialfooter {
-        list-style-type: none;
-        text-align: left;
-        position: absolute;
-        top: 20px;
-        left: 80px;
-    }
-    
-    .socialfooter li {
-        display: inline-block;
-        margin-left: 10px;
-        margin-top: 50px;
-    }
-    
-    .icon-facebook-footer {
-        color: white;
-        font-size: 35px;
-    }
-    
-    .icon-instagram-footer {
-        color: white;
-        font-size: 35px;
-    }
-    
-    .icon-linkedin-footer {
-        color: white;
-        font-size: 35px;
     }
     
     /*BOTON WHATSAPP FIJO*/
@@ -1774,6 +1620,7 @@
         "art3 art4";
         justify-items: center;
         row-gap: 50px;
+        margin-bottom: 30px;
     }
     
     .art1 {
@@ -1922,6 +1769,7 @@
         text-align: start;
         margin-bottom: 20px;
         margin-top: 30px;
+        margin-left: 0px;
     }
     
     .lista-rol {
@@ -1938,6 +1786,16 @@
         margin-right: 40px;
         margin-left: 40px;
     }
+
+    .bi {
+        font-size: 2rem;
+        color: #737373;
+        padding: 10px;
+    }
+
+    .bi:hover {
+        transform: scale(1,1 1,1);
+    }
     
 }
 
@@ -1950,47 +1808,24 @@
         color: #737373;
         background-color: white;
     }
-    
+
     header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 3fr;
-        grid-template-areas: 
-        "logo socialinicio"
-        "logo menu";
-        row-gap: 20px;
-        background-color: white;
-        box-shadow: 1px 1px 1px #737373;
-        width: 100%;
-        height: 150px;
-        z-index: 100;
-        position: fixed;
-        font-family: "Quicksand";
+        margin-top: 50px;
     }
     
     main {
         position: relative;
-        margin-top: 200px;
+        margin-top: 0px;
         display: flex;
         flex-direction: column;
-        row-gap: 100px;
+        row-gap: 50px;
     }
     
 /*ESTILO LOGO Y H1*/
-        
-    .logo {
-        grid-area: logo;
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        justify-items: center;
-        align-items: center;
-        margin-left: 20px;
-    }
 
-    #logoinicio {
-        width: 250px;
-    }
+.logo {
+    width: 200px;
+}
     
 /*ESTILO MENU INICIO*/
         
@@ -2163,7 +1998,7 @@
     
     h1 {
         font-family: "Quicksand";
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         text-align: center;
         color: #737373;
         letter-spacing: 0.2rem;
@@ -2184,7 +2019,7 @@
         font-size: 1.5rem;
         text-align: center;
         color: #737373;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
     
     h3 {
@@ -2217,6 +2052,14 @@
         line-height: 1.6;
         font-weight: bold;
         padding-top: 5px;
+    }
+
+    .h5footer {
+        font-family: "Montserrat";
+        font-size: 1rem;
+        text-align: left;
+        color: #737373;
+        line-height: 1.5;
     }
     
     h6 {
@@ -2254,6 +2097,11 @@
     .quehacemos {
         display: flex;
         flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .tituloquehacemos {
+        margin: 15px;
     }
     
     .soluciones {
@@ -2505,7 +2353,7 @@
     }
     
     .formulario {
-        margin-top: 30px;
+        margin-top: 20px;
     }
         
     .columna1 {
@@ -2614,79 +2462,7 @@
     }
     
     .scale:hover {
-        transform: scale(1.2, 1.2);
-    }
-        
-/*SECCIÓN FOOTER*/
-
-    footer {
-        background-color: #737373;
-        text-align: center;
-        position: relative;
-        margin-top: 100px;
-        width: 100%;
-        height: 150px;
-    }
-        
-    .menufooter {
-        list-style-type: none;
-        text-align: center;
-        display: inline-block;
-        padding: 10px;
-        margin-top: 20px;
-    }
-    .menufooter li {
-        display: inline-block;
-        text-align: center;
-        margin: 5px;
-    }
-        
-    .menufooter li :hover {
-        transition: all 0.1s;
-        font-weight: bold;
         transform: scale(1.1, 1.1);
-    }
-        
-    .menufooter li a{
-        text-decoration: none;
-        display: inline-block;
-        font-family: 'Quicksand';
-        font-size: 1rem;
-        padding: 6px;
-        color:#737373;
-        border-radius: 5px;
-        border: white 1px solid;
-        border-style: groove;
-        background-color: white;
-    }
-        
-    .socialfooter {
-        list-style-type: none;
-        text-align: left;
-        position: absolute;
-        top: 20px;
-        left: 80px;
-    }
-        
-    .socialfooter li {
-        display: inline-block;
-        margin-left: 10px;
-        margin-top: 50px;
-    }
-        
-    .icon-facebook-footer {
-        color: white;
-        font-size: 35px;
-    }
-        
-    .icon-instagram-footer {
-        color: white;
-        font-size: 35px;
-    }
-        
-    .icon-linkedin-footer {
-        color: white;
-        font-size: 35px;
     }
         
 /*BOTON WHATSAPP FIJO*/
@@ -2717,6 +2493,7 @@
         "art3 art4";
         justify-items: center;
         row-gap: 50px;
+        margin-bottom: 40px;
     }
 
     .imgart {
@@ -2872,7 +2649,8 @@
         text-align: start;
         margin-bottom: 20px;
         margin-top: 30px;
-        }
+        margin-left: 0px;
+    }
         
     .lista-rol {
         list-style-type:circle;
@@ -2888,5 +2666,16 @@
         margin-right: 40px;
         margin-left: 40px;
     }
+
+    .bi {
+        font-size: 2rem;
+        color: #737373;
+        padding: 10px;
+    }
+
+    .bi:hover {
+        transform: scale(1,1 1,1);
+    }
+
         
 }
