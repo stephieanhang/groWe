@@ -1,0 +1,11 @@
+header {
+    margin-top: 50px;
+    h1 {
+        font-family: "Quicksand";
+        font-size: $tamaño-titulo;
+        text-align: center;
+        color: $color-letra;
+        letter-spacing: 0.2rem;
+        justify-self: start;
+    }
+}
